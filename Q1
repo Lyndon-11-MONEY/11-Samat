@@ -1,0 +1,77 @@
+Annex B
+Computational Thinking Exercise: "Smart Vending Machine"
+Section: 9-Samat Score:____________
+
+C# / Name:NICOLAS,Lyndon John F. Date: August 14 2026
+
+Scenario
+Your school installs a vending machine to provide snacks and drinks. However, students encounter several issues:
+
+Sometimes the machine does not give the correct change.
+Items run out, but the machine doesn’t notify anyone.
+Students press the wrong buttons and get the wrong item.
+The machine is slow when multiple students use it in succession.
+Your task is to decompose this problem into smaller, manageable parts that could be solved with computational thinking (CT) Skills.
+
+Step 1: Identify the Big Problem
+Main Problem: The vending machine that serves snacks and drinks causes problems and disruptions which leads to slow operations, 
+causing hassles that might affect the school population and the machine in general.
+
+Step 2: Identify three to four Sub-Problems
+Please list possible sub-problems:
+
+1. Sometimes, the machine doesn't give accurate change when people order from it.
+
+2. When the items in the machine run out, it does not notify the people ordering.
+
+3. When people accidentally press the wrong buttons, it immediately gives the wrong item.
+
+4. Many people use it consecutively, thus causing slow operations due to overloading.
+
+
+Step 3: Define Computational Thinking Approaches
+For each sub-problem, apply CT skills:
+
+Sub-Problem 1: Sometimes, the machine doesn't give accurate change when people order from it.
+CT Skill: Algorithmic Thinking - errors in the machine code might hinder the amount of change given, therefore it is recommended to run some checks to ensure that the code
+works properly.
+ 
+
+Sub-Problem 2: When the items in the machine run out, it does not notify the people ordering.
+CT Skill: Pattern Recognition - the vending machine might not have a sensor detecting when the items inside it run out, therefore lacking a detector that notifies the people ordering
+that the machine has run out of stock. 
+
+
+Sub-Problem 3: When people accidentally press the wrong buttons, it immediately gives the wrong item.
+CT Skill: Abstraction - the machine detects whichever item is picked; to fix this, adding an 'undo' button to reverse the order is highly recommended to 
+prevent unwanted items to be given.
+
+Sub-Problem 4: Many people use it consecutively, thus causing slow operations due to overloading.
+CT Skill: Decomposition - since many people use it causing it to overload, the instructions inside the machine might malfunction due to code defects, which is why this
+CT skill would help to analyze each part of the machine's processes and ways to prevent slow operations from happening.
+
+Step 4: Draw a flowchart or write a pseudocode for the identified sub-problem (Your group could use a separate sheet of paper)
+PSEUDOCODE
+Sub-problem #1
+
+START
+Check price of item
+Check change of item
+Check money given by customer
+
+IF change of item = money given - price of item THEN
+  Change given is accurate
+  END
+
+IF change of item > money given - price of item OR change of item < money given - price of item THEN
+  Change given is innaccurate
+ELSE
+  Machine detects problem
+  IF problem = machine calculation THEN
+    Fix machine calculation
+  IF problem = slow responses THEN
+    Fix responses
+  IF problem = amount of coins left THEN
+    Fix amount of coins
+
+END
