@@ -1,8 +1,9 @@
 Annex B
 Computational Thinking Exercise: "Smart Vending Machine"
-Section: 9-Samat Score:____________
+Section: 9 - Samat // Score:____________
 
-C# / Name:NICOLAS,Lyndon John F. Date: August 14 2026
+C# / Name: 10 / Mones, Jacques Vincent Dion C. // Date: 8/13/26
+
 
 Scenario
 Your school installs a vending machine to provide snacks and drinks. However, students encounter several issues:
@@ -55,22 +56,23 @@ PSEUDOCODE
 Sub-problem #1
 
 START
-Check price of item
-Check change of item
-Check money given by customer
 
-IF change of item = money given - price of item THEN
-  Change given is accurate
+Check items inside machine
+INPUT cash given
+INPUT price of item
+
+IF cash given >=  price of item THEN
+ change == cash given - price of item
+ IF change == price of item THEN
+  Machine fixed
   END
 
-IF change of item > money given - price of item OR change of item < money given - price of item THEN
-  Change given is innaccurate
+IF amount of coins in machine == 0 THEN
+ Add coins in machine 
 ELSE
-  Machine detects problem
-  IF problem = machine calculation THEN
-    Fix machine calculation
-  IF problem = slow responses THEN
-    Fix responses
+ Fix change calculation
+
+END
   IF problem = amount of coins left THEN
     Fix amount of coins
 
