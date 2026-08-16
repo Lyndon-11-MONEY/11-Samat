@@ -1,0 +1,125 @@
+Annex C
+Code Quality Assessment Worksheet
+
+Section: 9 - Samat // Score:____________
+
+C# / Name: #11 / Nicolas, Lyndon John F. //  Date: 8/16/26
+Group: #10 Mones, #11 Nicolas, #12 Paderna
+
+Instructions:
+The problem: Finding the highest (Maximum) number from a given list of numbers.
+
+PseudoCode 1
+Algorithm FindMax1(numbers)
+   max ← numbers[0]
+   For i from 1 to length(numbers)-1
+      If numbers[i] > max Then
+         max ← numbers[i]
+      EndIf
+   EndFor
+   Return max
+EndAlgorithm
+
+Pseudocode 2
+Algorithm FindMax2(numbers)
+   For i from 0 to length(numbers)-1bigger ← true
+      For j from 0 to length(numbers)-1
+         If numbers[j] > numbers[i] Then
+            bigger ← false
+         EndIf
+      EndFor
+      If bigger = true Then
+         Return numbers[i]
+      EndIf
+   EndFor
+EndAlgorithm
+
+Questions with Checklists
+1. Efficiency
+Which algorithm is faster when the list of numbers is very large? Why?
+The algorithm that is faster when the list of numbers is very large is pseudocode 1 because it does not use nested loops, because it scans through
+the number once assuming that it is the maximum value and turns to the other number to scan if that number is larger or smaller than the number previously.
+scanned
+
+PseudoCode 1
+o Does the algorithm use one loop or two nested loops?
+o Does the algorithm repeat work unnecessarily?
+o Which algorithm finishes in fewer steps?
+PseudoCode 2
+o Does the algorithm use one loop or two nested loops?
+o Does the algorithm repeat work unnecessarily?
+o Which algorithm finishes in fewer steps?
+
+2. Readability
+
+Which algorithm is easier to understand at first glance? What makes it clearer?
+At first glance, the algorithm that is eaaier to understand is PseudoCode 1 because it does not use nested loops making you know that the first number being
+tested is the maximum, and the numbers succeeding it use the first number as reference to knowing whether or not if it smaller or larger than it. It also uses
+ if numbers[i] > max, max -> number[i], an easy way of showing the reader that the reference number is the max number.
+
+Checklist to guide your answer:
+PseudoCode 1
+o Are variable names meaningful (e.g., max vs. bigger)?
+o Is the logic simple or complicated?
+o Are there fewer lines of code?
+PseudoCode 2
+o Are variable names meaningful (e.g., max vs. bigger)?
+o Is the logic simple or complicated?
+o Are there fewer lines of code?
+
+3. Maintainability
+If you had to add a new feature (like finding both max and min), which algorithm would be easier to update? Why?
+The algorithm that would be easier to update if we were to add a new feature is PseudoCode 1 because again, it is not a nested loop meaning that it
+only checks once before moving on, and adding a max value means checking the min value only once. It would also mean that the code is simpler to read 
+and when readers try to update the code, it does not crash easily.
+
+Checklist to guide your answer:
+PseudoCode 1
+o Is the structure straightforward?
+o Would adding new steps break the code easily?
+o Is there less chance of errors when updating?
+PseudoCode 2
+o Is the structure straightforward?
+o Would adding new steps break the code easily?
+o Is there less chance of errors when updating?
+
+4. Testability
+Which algorithm is easier to test with different inputs? Why?
+The algorithm that is easier to test with different inputs is PseudoCode 1 because it can be checked with only fewer conditions and not have much
+complex processes such as nested loops in Pseudocode 2. The output is also clear bceause its code is more simple to understand, allowing the reader to
+input different inputs easily.
+
+Checklist to guide your answer:
+PseudoCode 1
+o Can you test with small lists easily?
+o Does the algorithm have fewer conditions to check?
+o Is the output predictable and clear?
+PseudoCode 2
+o Can you test with small lists easily?
+o Does the algorithm have fewer conditions to check?
+o Is the output predictable and clear?
+
+
+5. Security
+Imagine the input list comes from a user. What should the algorithm check to avoid errors or misuse?
+If the input comes from the user, the algorithm should check whether or not the integer put inside the 
+list is valid (if there are certain conditions); moreover, it must comparable and not non-finite (infinite).
+
+Checklist to guide your answer:
+PseudoCode 1
+o Does the algorithm check if the list is empty?
+o Does it handle invalid inputs (like letters instead of numbers)?
+o Does it avoid crashing when inputs are unusual?
+PseudoCode 2
+o Does the algorithm check if the list is empty?
+o Does it handle invalid inputs (like letters instead of numbers)?
+o Does it avoid crashing when inputs are unusual?
+
+ 
+
+6. Final Answer
+Based on your answers from 1 to 5, which one is the better algorithm that you will use to solve the problem of finding the highest number? Why? Summarize your answer
+The algorithm that our group would rather use is Pseudocode 1 because not only is the code simpler and efficient for even novice readers to use,
+its functions are much more easier to understand than Pseudocode 2 which uses nested loops that check whether or not the number being compared is larger than
+the previous number, causing a hassle in time management.
+i2
