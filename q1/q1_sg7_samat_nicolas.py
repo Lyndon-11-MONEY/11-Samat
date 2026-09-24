@@ -1,3 +1,10 @@
+"""
+#11 Nicolas,Lyndon John F.
+9-Samat
+25/09/26
+"""
+
+
 class Glassware:
     def __init__(self, material):
         self.material = material
@@ -17,7 +24,7 @@ class Tray:
 
 tray = Tray()
 
-print("Tray contains 5 beakers.")
+print("Tray composes of 5 beakers.")
 print("Beaker 1:", tray.beaker1.capacity, "mL")
 print("Beaker 2:", tray.beaker2.capacity, "mL")
 print("Beaker 3:", tray.beaker3.capacity, "mL")
@@ -26,4 +33,4 @@ print("Beaker 5:", tray.beaker5.capacity, "mL")
 
 del tray
 
-print("The tray is deleted, the 5 beakers is now gone"
+print("The tray is deleted ,the 5 beakers are now gone")     
