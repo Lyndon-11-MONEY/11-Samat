@@ -3,7 +3,7 @@ Lyndon John F Nicolas
 9-Samat
 ‎Oct. 16, 2026
 ‎'''
-‎
+‎#classes 
 ‎class Publication:
 ‎    def __init__(self, title, author):
 ‎        self.title = title
@@ -84,7 +84,7 @@ Lyndon John F Nicolas
 ‎        print(f"Title: {self.title}")
 ‎        print(f"Author: {self.author}")
 ‎
-‎
+‎#whats getting printed 
 ‎pub1 = Publication(
 ‎    "Journal of Experimental Psychology",
 ‎    "Ratchiff, R. & Van Dongen, H.")
