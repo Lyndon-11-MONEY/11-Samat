@@ -1,7 +1,7 @@
 '''
 Lyndon John F Nicolas
 9-Samat
-‎Oct. 16, 2026
+‎Oct. 22, 2026
 ‎'''
 class Patient:
     def __init__(self, name, bill_amount): #no discount
